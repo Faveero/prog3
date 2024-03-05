@@ -9,9 +9,9 @@
 body{ /*define estilização geral do conteúdo da página*/
     background-color: var(--cor-de-fundo); /*cor do fundo / var declara a variável criada em root*/
     color: var(--branco); /*cor da fonte*/
-    font-family: "Chakra Petch", sans-serif; /*tipo da fonte*/
-    font-weight: 400; /*tamanho da fonte*/
-    font-style: normal; /*estilo da fonte*/
+    font-family: "Kode Mono", monospace;
+    font-optical-sizing: auto;
+    font-style: normal;
 }
 .conteudo-principal{ /*classe conteudo-principal do HTML*/
     display: flex; /*define o layout do conteúdo: flex ou grid*/
