@@ -63,5 +63,6 @@ body{ /*define estilização geral do conteúdo da página*/
     background-color: var(--botao-ativo); /*cor de fundo diferente pra mudar de cor*/
     border-bottom: 4px solid var(--verde); /*cor verde na borda inferior do botão*/
 }
-
-/*ffwewegegwe*/
+.abas-textos{
+    text-align: center;
+}
