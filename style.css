@@ -47,6 +47,7 @@ body{ /*define estilização geral do conteúdo da página*/
 }
 .botoes{ /*classe botoes no HTML*/
     display: block; /*define como bloco começa em uma nova linha e ocupa a largura disponível da tela.*/
+    font-family: "Chakra Petch", sans-serif;
 }
 @media screen and (min-width:768px){ /*independente do dispositivo que o usuário estiver utilizando, o site irá se adaptar e ficar totalmente responsivo, sem quebras de layout*/
     .botoes{ /*classe botoes no HTML*/
