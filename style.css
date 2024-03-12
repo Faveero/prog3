@@ -70,9 +70,9 @@ body{ /*define estilização geral do conteúdo da página*/
     border-radius: 0 0 40px 40px;
 }
 .aba-conteudo.ativo{
-    display: block;
+    display: none;
 }
 .aba-conteudo{
-    display: none;
+    display: block;
 }
 
