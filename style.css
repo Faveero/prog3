@@ -69,9 +69,6 @@ body{ /*define estilização geral do conteúdo da página*/
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
-.aba-conteudo{
-    display: none;
-}
 .aba-conteudo.ativo{
     display: block;
 }
