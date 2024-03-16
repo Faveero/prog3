@@ -73,3 +73,6 @@ body{ /*define estilização geral do conteúdo da página*/
     display: block;
 }
 
+.aba-conteudo{
+    display: none;
+}
