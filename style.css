@@ -75,7 +75,3 @@ body{ /*define estilização geral do conteúdo da página*/
 .aba-conteudo{
     display: none;
 }
-
-.contador.ativo{
-    display: block;
-}
