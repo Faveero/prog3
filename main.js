@@ -9,7 +9,7 @@ for (let i = 0; i < botoes.length; i++) { //este é um loop que percorre cada bo
         botoes[i].classList.add("ativo"); //depois de remover a classe 'ativo' de todos os botões, adicionamos a classe 'ativo' de volta ao botão que foi clicado. Isso efetivamente garante que apenas o botão clicado tenha a classe 'ativo'//      
         textos[i].classList.add("ativo");
     }
-}
-
 const contadores = document.querySelectorAll(".contador");
 contadores[0].textContent = "Contagem regressiva";
+}
+
