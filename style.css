@@ -31,7 +31,9 @@ body{ /*define estilização geral do conteúdo da página*/
     color: var(--verde); 
 }
 .botao{ /*classe botao no HTML*/
-    font-family: "Chakra Petch", sans-serif; /*tipo/família da fonte*/
+    font-family: "Kode Mono", monospace; /*define a fonte utilizada na página*/
+    font-optical-sizing: auto; 
+    font-style: normal;
     background-color: var(--botao-inativo); /*var declara a variável criada em root*/
     color: var(--branco);
     display: flex;
