@@ -83,3 +83,6 @@ body{ /*define estilização geral do conteúdo da página*/
 .contador{
     color: #6FFF57;
 }
+.relogio{
+    width: 15%;
+}
