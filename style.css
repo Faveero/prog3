@@ -77,12 +77,12 @@ body{ /*define estilização geral do conteúdo da página*/
 .aba-conteudo{
     display: none;
 }
-.aba-conteudo-titulo-secundario{
-    color:#6FFF57;
+.aba-conteudo-titulo-principal{ 
+    font-size: 28px;
+    text-align: center;
 }
-.contador{
-    color: #6FFF57;
-}
-.relogio{
-    width: 15%;
-}
+.aba-conteudo-titulo-secundario{ 
+    text-align: center;
+    color: var(--verde); 
+    text-transform: uppercase;
+    }
