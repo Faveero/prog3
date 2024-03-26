@@ -74,9 +74,7 @@ body{ /*define estilização geral do conteúdo da página*/
 .aba-conteudo.ativo{
     display: block;
 }
-.aba-conteudo{
-    display: none;
-}
+
 .aba-conteudo-titulo-secundario{
     color:#6FFF57;
 }
