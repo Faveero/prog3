@@ -6,7 +6,7 @@ for (let i = 0; i < botoes.length; i++) { //este é um loop que percorre cada bo
             botoes[j].classList.remove("ativo"); //aqui removemos a classe 'ativo' de cada botão. Isso pode ser usado para alterar o estilo do botão, por exemplo, para indicar qual botão está atualmente ativo//       
             textos[j].classList.remove("ativo");    
         }
-        this.classList.add("ativo"); //depois de remover a classe 'ativo' de todos os botões, adicionamos a classe 'ativo' de volta ao botão que foi clicado. Isso efetivamente garante que apenas o botão clicado tenha a classe 'ativo'//      
+        botoes[i].classList.add("ativo"); //depois de remover a classe 'ativo' de todos os botões, adicionamos a classe 'ativo' de volta ao botão que foi clicado. Isso efetivamente garante que apenas o botão clicado tenha a classe 'ativo'//      
         textos[i].classList.add("ativo");
     }
 }
