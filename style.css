@@ -85,4 +85,8 @@ body{ /*define estilização geral do conteúdo da página*/
     text-align: center;
     color: var(--verde); 
     text-transform: uppercase;
-    }
+}
+.contador{
+    font-size: 20px;
+    text-align: center;
+}
