@@ -11,7 +11,7 @@ for (let i = 0; i < botoes.length; i++) {
     }
 }
 const contadores = document.querySelectorAll(".contador");
-const tempo1 = new Date("2024-12-11T00:00:00");
+const tempo1 = new Date("2024-12-13T00:00:00");
 
 contadores[0].textContent = calculaTempo(tempo1);
 function calculaTempo(tempo){
