@@ -90,3 +90,6 @@ body{ /*define estilização geral do conteúdo da página*/
     font-size: 20px;
     text-align: center;
 }
+.relogio{
+    width: 18px;
+}
