@@ -50,4 +50,4 @@ function comecaCronometro(){ //comeca a contagem quadno entra na pagina
 atualizaCronometro(); //chamando a função par que funcione na pagina
 setInterval(atualizaCronometro, 1000);
 }
-//comecaCronometro();
+comecaCronometro();
