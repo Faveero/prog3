@@ -11,10 +11,10 @@ for (let i = 0; i < botoes.length; i++) { //laço de repetição que passará po
     }
 }
 const contadores = document.querySelectorAll(".contador"); //constante contador
-const tempo1 = new Date("2024-12-13T00:00:00"); //estipula uma data para a contagem regressiva
-const tempo2 = new Date("2024-11-12T00:00:00");
-const tempo3 = new Date("2024-10-11T00:00:00");
-const tempo4 = new Date("2024-04-24T00:00:00");
+const tempo1 = new Date("2024-12-13T00:00:00"); //estipula uma data para a contagem regressiva BOTAO1
+const tempo2 = new Date("2024-11-12T00:00:00"); //estipula uma data para a contagem regressiva BOTAO2
+const tempo3 = new Date("2024-10-11T00:00:00"); //estipula uma data para a contagem regressiva BOTAO3
+const tempo4 = new Date("2024-04-24T00:00:00"); //estipula uma data para a contagem regressiva BOTAO4
 const tempos = [tempo1, tempo2, tempo3, tempo4];
 
 contadores[0].textContent = calculaTempo(tempos[0]);
@@ -33,20 +33,20 @@ function calculaTempo(tempo){ //funcao contagem regressiva
     segundos %= 60;
     minutos %= 60;
     horas %= 24;
-if (tempoFinal > 0){
+if (tempoFinal > 0){ //se a data final ainda nao chegou o marcador continua
     return dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segundos";
 }
-else{
+else{ // caso contrario aparecerá a frase abaixo
     return "Prazo Finalizado";
 }
 }
 
-function atualizaCronometro(){
+function atualizaCronometro(){ //cronometro em tempo real
 for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
     }
 }
-function comecaCronometro(){
+function comecaCronometro(){ //comeca a contagem quadno entra na pagina
 atualizaCronometro(); //chamando a função par que funcione na pagina
 setInterval(atualizaCronometro, 1000);
 }
