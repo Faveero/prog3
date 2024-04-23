@@ -11,7 +11,7 @@ for (let i = 0; i < botoes.length; i++) { //laço de repetição que passará po
     }
 }
 const contadores = document.querySelectorAll(".contador"); //constante contador
-const tempo1 = new Date("2024-12-13T00:00:00"); //estipula uma data para a contagem regressiva
+const tempo1 = new Date("2020-12-13T00:00:00"); //estipula uma data para a contagem regressiva
 const tempo2 = new Date("2024-11-12T00:00:00");
 const tempo3 = new Date("2024-10-11T00:00:00");
 const tempo4 = new Date("2024-09-10T00:00:00");
@@ -33,9 +33,14 @@ function calculaTempo(tempo){ //funcao contagem regressiva
     segundos %= 60;
     minutos %= 60;
     horas %= 24;
-
+if (tempoFinal > 0){
     return dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segundos";
 }
+else{
+    return "Prazo Finalizado";
+}
+}
+
 function atualizaCronometro(){
 for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
