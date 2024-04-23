@@ -65,16 +65,16 @@ body{ /*define estilização geral do conteúdo da página*/
     background-color: var(--botao-ativo); /*cor de fundo diferente pra mudar de cor*/
     border-bottom: 4px solid var(--verde); /*cor verde na borda inferior do botão*/
 }
-.abas-textos{
+.abas-textos{ /*alinhando os textos*/
     text-align: center;
     background-color: var(--texto-fundo);
     padding: 40px;
     border-radius: 0 0 40px 40px;
 }
-.aba-conteudo.ativo{
+.aba-conteudo.ativo{ /*quando clica em um botao, aparece o conteudo*/
     display: block;
 }
-.aba-conteudo{
+.aba-conteudo{ /*quando um botao nao esta ativo, nao aparece o conteudo*/
     display: none;
 }
 .aba-conteudo-titulo-principal{ 
@@ -86,10 +86,10 @@ body{ /*define estilização geral do conteúdo da página*/
     color: var(--verde); 
     text-transform: uppercase;
 }
-.contador{
+.contador{ /*alinhamento da contagem regressiva*/
     font-size: 20px;
     text-align: center;
 }
-.relogio{
+.relogio{ /*tamanho da imagem do relogio*/
     width: 11%;
 }
