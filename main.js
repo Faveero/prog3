@@ -14,7 +14,7 @@ const contadores = document.querySelectorAll(".contador"); //constante contador
 const tempo1 = new Date("2024-12-13T00:00:00"); //estipula uma data para a contagem regressiva
 const tempo2 = new Date("2024-11-12T00:00:00");
 const tempo3 = new Date("2024-10-11T00:00:00");
-const tempo4 = new Date("2024-09-10T00:00:00");
+const tempo4 = new Date("2024-04-24T00:00:00");
 const tempos = [tempo1, tempo2, tempo3, tempo4];
 
 contadores[0].textContent = calculaTempo(tempos[0]);
