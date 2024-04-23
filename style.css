@@ -89,7 +89,13 @@ body{ /*define estilização geral do conteúdo da página*/
 .contador{ /*alinhamento da contagem regressiva*/
     font-size: 20px;
     text-align: center;
+    display: flex;
+    justify-content: center;
 }
 .relogio{ /*tamanho da imagem do relogio*/
     width: 11%;
+}
+.contador-digito{
+    padding: 0 16px;
+    text-align: center;
 }
