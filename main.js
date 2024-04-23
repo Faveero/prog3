@@ -36,6 +36,13 @@ function calculaTempo(tempo){ //funcao contagem regressiva
 
     return dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segundos";
 }
+function atualizaCronometro(){
 for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
     }
+}
+function comecaCronometro(){
+atualizaCronometro(); //chamando a função par que funcione na pagina
+setInterval(atualizaCronometro, 1000);
+}
+comecaCronometro();
