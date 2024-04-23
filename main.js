@@ -12,8 +12,16 @@ for (let i = 0; i < botoes.length; i++) { //laço de repetição que passará po
 }
 const contadores = document.querySelectorAll(".contador"); //constante contador
 const tempo1 = new Date("2024-12-13T00:00:00"); //estipula uma data para a contagem regressiva
+const tempo2 = new Date("2024-11-12T00:00:00");
+const tempo3 = new Date("2024-10-11T00:00:00");
+const tempo4 = new Date("2024-09-10T00:00:00");
+const tempos = [tempo1, tempo2, tempo3, tempo4];
 
-contadores[0].textContent = calculaTempo(tempo1); 
+contadores[0].textContent = calculaTempo(tempos[0]);
+contadores[1].textContent = calculaTempo(tempos[1]);
+contadores[2].textContent = calculaTempo(tempos[2]);
+contadores[3].textContent = calculaTempo(tempos[3]);
+
 function calculaTempo(tempo){ //funcao contagem regressiva
     let tempoAtual = new Date(); 
     let tempoFinal = tempo - tempoAtual;
@@ -28,3 +36,6 @@ function calculaTempo(tempo){ //funcao contagem regressiva
 
     return dias + "dias" + horas + "horas" + minutos + "minutos" + segundos + "segundos";
 }
+for (let i = 0; i < contadores.length; i++) {
+    contadores[i].textContent = calculaTempo(tempos[i]);
+    }
