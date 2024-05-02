@@ -1,7 +1,7 @@
 const botoes = document.querySelectorAll(".botao"); //constante botões
 const textos = document.querySelectorAll(".aba-conteudo"); //constante aba conteudo
 for (let i = 0; i < botoes.length; i++) { //laço de repetição que passará por todos botões
-    botoes[i].onclick = function (){ //funcao que ao clicar no botao ativa os efeitos e textos
+    botoes[i].onclick = function (){ //funcao para quando clicar no botao ativa os efeitos e textos
         for (let j = 0; j < botoes.length; j++) { 
             botoes[j].classList.remove("ativo"); //aqui remove o efeito ativo do botao        
             textos[j].classList.remove("ativo"); //aqui remove o efeito ativo do texto   
@@ -10,7 +10,7 @@ for (let i = 0; i < botoes.length; i++) { //laço de repetição que passará po
         textos[i].classList.add("ativo"); //aqui ativa o texto no botao
     }
 }
-const contadores = document.querySelectorAll(".contador"); //constante contador
+const contadores = document.querySelectorAll(".contador"); //contador
 const tempo1 = new Date("2024-12-13T00:00:00"); //estipula uma data para a contagem regressiva BOTAO1
 const tempo2 = new Date("2024-11-12T00:00:00"); //estipula uma data para a contagem regressiva BOTAO2
 const tempo3 = new Date("2024-10-11T00:00:00"); //estipula uma data para a contagem regressiva BOTAO3
@@ -46,8 +46,8 @@ for (let i = 0; i < contadores.length; i++) {
     contadores[i].textContent = calculaTempo(tempos[i]);
     }
 }
-function comecaCronometro(){ //comeca a contagem quadno entra na pagina
-atualizaCronometro(); //chamando a função par que funcione na pagina
+function comecaCronometro(){ //comeca a contagem quando entra na pagina
+atualizaCronometro(); //chamando a função para que funcione na pagina
 setInterval(atualizaCronometro, 1000);
 }
 comecaCronometro();
